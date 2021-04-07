@@ -41,5 +41,5 @@ const generatePDF = async (name) => {
    
     // Serialize the PDFDocument to bytes (a Uint8Array)
     const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-    saveAs(pdfDataUri,"ArduTalk.pdf")
+    saveAs(pdfDataUri,name + " ArduTalk")
   };
