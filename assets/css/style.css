@@ -1,11 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family:  'Montserrat', sans-serif;
    
     /* font-size: 1.5em; */
 }
-
+body{
+    background-color: aqua;
+}
 header{
     padding: 150px;
    /* background-image: url('bg_header.jfif'); */
@@ -45,12 +47,13 @@ main {
 input,
 span,
 label{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   display: block;
   margin: 10px;
   padding: 5px;
   border: none;
   font-size: 22px;
+  color: #000000;
 }
 input:focus {
     outline: 0;
@@ -90,13 +93,13 @@ input.question:focus + label > span,
 input.question:valid + label > span {
   top: -100px;
   font-size: 22px;
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 
 
 input.question:valid + label {
-  border-color: green;
+  border-color: rgb(4, 42, 100);
 }
 
 input.question:invalid{
@@ -107,7 +110,7 @@ input.question + label > span{
   font-weight: 300;
   margin: 0;
   position: absolute;
-  color: #8F8F8F;
+  color: #000000;
   font-size: 48px;
   top: -66px;
   left: 0px;
