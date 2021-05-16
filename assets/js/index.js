@@ -13,7 +13,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 const generatePDF = async (name) => {
-    const existingPdfBytes = await fetch("./assets/certificate/CertificateofParticipant-AD21.pdf").then((res) =>
+    const existingPdfBytes = await fetch("./assets/certificate/SummerHacks.pdf").then((res) =>
       res.arrayBuffer()
     );
 
@@ -32,14 +32,14 @@ const generatePDF = async (name) => {
    
      // Draw a string of text diagonally across the first page
      firstPage.drawText(name, {
-       x: 120,
-       y: 240,
-       size: 40,
+       x: 100,
+       y: 315,
+       size: 50,
        font: Montserrat ,
        color: rgb(0.0, 0.0, 0.0),
      });
    
     // Serialize the PDFDocument to bytes (a Uint8Array)
     const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-    saveAs(pdfDataUri,name + " ArduTalk")
+    saveAs(pdfDataUri,name + " Summer Hacks Participation")
   };

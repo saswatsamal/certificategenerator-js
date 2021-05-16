@@ -6,7 +6,7 @@
     /* font-size: 1.5em; */
 }
 body{
-    background-color: aqua;
+    background-color: rgb(187, 255, 0);
 }
 header{
     padding: 150px;
@@ -20,10 +20,11 @@ header{
     position: relative;
 }
  .heading_text h1{
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 54px;
-    margin-bottom:10px
-    /* font-weight: 900; */
+    margin-bottom:10px;
+    font-weight: 9px;
 } 
 main {
     padding: 20px;
