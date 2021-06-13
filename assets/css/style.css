@@ -9,7 +9,7 @@ body{
     background-color: rgb(187, 255, 0);
 }
 header{
-    padding: 150px;
+    
    /* background-image: url('bg_header.jfif'); */
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -25,6 +25,7 @@ header{
     font-size: 54px;
     margin-bottom:10px;
     font-weight: 9px;
+    margin: auto;
 } 
 main {
     padding: 20px;
@@ -129,4 +130,20 @@ input[type="submit"] {
      margin: 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+    margin-top: auto;
+  }
+
+  .heading_text h1{
+     font-family: 'Montserrat', sans-serif;
+     text-align: left;
+     font-size:5vw;
+     margin-bottom:10px;
+     font-weight: 9px;
+     margin: auto;
+ }
 }

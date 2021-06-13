@@ -13,7 +13,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 const generatePDF = async (name) => {
-    const existingPdfBytes = await fetch("./assets/certificate/SummerHacks.pdf").then((res) =>
+    const existingPdfBytes = await fetch("./assets/certificate/Certificate.pdf").then((res) =>
       res.arrayBuffer()
     );
 
@@ -41,5 +41,5 @@ const generatePDF = async (name) => {
    
     // Serialize the PDFDocument to bytes (a Uint8Array)
     const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-    saveAs(pdfDataUri,name + " Summer Hacks Participation")
+    saveAs(pdfDataUri,name + " CER-HCI-QZ-2021-01-P")
   };
