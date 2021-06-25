@@ -63,7 +63,7 @@ text-align: left;
 margin-top: 30px;
 }
 
-label, input, button {
+label{
 display: block;
 width: 100%;
 padding: 0;
@@ -71,7 +71,18 @@ border: none;
 outline: none;
 box-sizing: border-box;
 text-align: center;
-color: white;
+color: rgb(255, 255, 255);
+} 
+
+input, button {
+display: block;
+width: 100%;
+padding: 0;
+border: none;
+outline: none;
+box-sizing: border-box;
+text-align: center;
+
 }
 
 label {
@@ -93,6 +104,7 @@ padding-left: 20px;
 height: 50px;
 font-size: 14px;
 border-radius: 50px;
+color: #121217;
 }
 
 button {
@@ -110,12 +122,4 @@ transition: 0.5s;
 
 button:hover {
 box-shadow: none;
-}
-
-
-
-h1 {
-position: absolute;
-top: 0;
-left: 0;
 }
