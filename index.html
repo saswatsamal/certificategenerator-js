@@ -2,32 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate your Certificate. | Hack Club ITER</title>
+    <title>Certificate Generator | Hack Club ITER</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://assets.hackclub.com/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href=""/>
 </head>
 <body>
-
-    <header>
-        <div class="heading_text">
-            
-            <h1>Download your IoT Quiz Certificate</h1>
-        </div>
-      
-    </header>
-    <main>
-        <div>
-            <input type="text" name="Name" class="question" id="name" required autocomplete="off" />
-            <label for="name"><span>Name</span></label>
-            <input type="submit" id="submitBtn" value="Get Certificate"/>
-        </div>
-    </main>
-    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
-    <script src="./assets/js/filesaver.js"></script>
-    <script src="./assets/js/index.js"></script>
+<div class="container">
+    <div class="brand-logo"></div>
+    <div class="brand-title">Hack Club ITER.</div>
+    <div class="brand-title-small">Certificate Generator</div>
+    <div class="inputs">
+      <label>Name</label>
+      <input type="text" name="Name" class="question" placeholder="Enter your name" id="name" required autocomplete="off" />
+      <label>Verification Code</label>
+      <input type="password" placeholder="6 charaters long" />
+      <button type="submit" id="submitBtn" value="Get">Download Certificate</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+  <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+  <script src="./assets/js/filesaver.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 </html>
