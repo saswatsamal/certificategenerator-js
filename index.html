@@ -10,17 +10,27 @@
 </head>
 <body>
 <div class="container">
+    <!-- Headers -->
     <div class="brand-logo"></div>
     <div class="brand-title">Hack Club ITER.</div>
     <div class="brand-title-small">Certificate Generator</div>
     <div class="inputs">
+      
+      <!-- User Name -->
       <label>Name</label>
-      <input type="text" name="Name" class="question" placeholder="Enter your name" id="name" required autocomplete="off" />
+
+      <input type="text" class="question" placeholder="Enter your name!" id="name" required autocomplete="off" />
+
+      <!-- Verification Code -->
       <label>Verification Code</label>
-      <input type="password" placeholder="6 charaters long" />
-      <button type="submit" id="submitBtn" value="Get">Download Certificate</button>
+      <input type="text" placeholder="Enter the key!" id="validation" required autocomplete="off"/>
+
+      <button type="submit" id="submitBtn">Download Certificate</button>
     </div>
-  </div>
+</div>
+  <script>
+
+  </script>
   <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
   <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
   <script src="./assets/js/filesaver.js"></script>

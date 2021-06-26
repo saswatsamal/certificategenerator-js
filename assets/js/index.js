@@ -1,14 +1,16 @@
 const userName = document.getElementById("name");
+const userValidation = document.getElementById("validation");
 const submitBtn = document.getElementById("submitBtn");
 const { PDFDocument, rgb, degrees } = PDFLib;
 
+
 submitBtn.addEventListener("click", () => {
     const val =userName.value;
-    if (val.trim() !== "" && userName.checkValidity()) {
-        // console.log(val);
+    const val2 =userValidation.value;
+    if (val.trim() !== "" && userName.checkValidity() && val2=="HCI10") {
         generatePDF(val);
       } else {
-        userName.reportValidity();
+        alert("Enter your name and the key correctly.");
       }
 });
 
