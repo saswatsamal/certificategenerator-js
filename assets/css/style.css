@@ -26,7 +26,7 @@ font-family: Phantom Sans;
 .container {
 position: relative;
 width: 350px;
-height: 500px;
+height: 550px;
 border-radius: 20px;
 padding: 40px;
 box-sizing: border-box;
@@ -63,7 +63,7 @@ text-align: left;
 margin-top: 30px;
 }
 
-label{
+p,label{
 display: block;
 width: 100%;
 padding: 0;
@@ -110,7 +110,6 @@ color: #121217;
 button {
 margin-top: 20px;
 background-image: radial-gradient( ellipse farthest-corner at top left, #ff8c37, #ec3750);
-
 height: 40px;
 border-radius: 20px;
 cursor: pointer;
