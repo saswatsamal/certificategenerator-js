@@ -9,9 +9,18 @@ submitBtn.addEventListener("click", () => {
     const val2 =userValidation.value;
     if (val.trim() !== "" && userName.checkValidity() && val2=="HCI10") {
         generatePDF(val);
-      } else {
-        alert("Enter your name and the key correctly.");
+        text = "Downloading.";
+      } 
+      if(val.trim() == "" && val2.trim() == "" && val2!=="HCI10"){
+        text = "Enter your name and the correct Validation key";;
       }
+      else if(val.trim() == ""){
+        text = "Enter your name";;
+      }
+      else if(val2.trim() == "" && val2!=="HCI10"){
+        text = "Enter the correct Validation key";;
+      }
+      document.getElementById("alert").innerHTML = text;
 });
 
 const generatePDF = async (name) => {
