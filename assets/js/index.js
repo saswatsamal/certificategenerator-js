@@ -24,7 +24,7 @@ submitBtn.addEventListener("click", () => {
 });
 
 const generatePDF = async (name) => {
-    const existingPdfBytes = await fetch("./assets/certificate/COP.pdf").then((res) =>
+    const existingPdfBytes = await fetch("./assets/certificate/CER-HCI-W-2021-0123-P.pdf").then((res) =>
       res.arrayBuffer()
     );
 
