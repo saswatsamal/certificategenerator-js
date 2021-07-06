@@ -7,24 +7,24 @@ const { PDFDocument, rgb, degrees } = PDFLib;
 submitBtn.addEventListener("click", () => {
     const val =userName.value;
     const val2 =userValidation.value;
-    if (val.trim() !== "" && userName.checkValidity() && val2=="W0H1C2") {
+    if (val.trim() !== "" && userName.checkValidity() && val2=="AMA02") {
         generatePDF(val);
         text = "Downloading.";
       } 
-      if(val.trim() == "" && val2.trim() == "" && val2!=="W0H1C2"){
+      if(val.trim() == "" && val2.trim() == "" && val2!=="AMA02"){
         text = "Enter your name and the correct Validation key";;
       }
       else if(val.trim() == ""){
         text = "Enter your name";;
       }
-      else if(val2.trim() == "" && val2!=="W0H1C2"){
+      else if(val2.trim() == "" && val2!=="AMA02"){
         text = "Enter the correct Validation key";;
       }
       document.getElementById("alert").innerHTML = text;
 });
 
 const generatePDF = async (name) => {
-    const existingPdfBytes = await fetch("./assets/certificate/CER-HCI-W-2021-0123-P.pdf").then((res) =>
+    const existingPdfBytes = await fetch("./assets/certificate/CER-HCI-AMA-2021-02-P.pdf").then((res) =>
       res.arrayBuffer()
     );
 
@@ -45,12 +45,12 @@ const generatePDF = async (name) => {
      firstPage.drawText(name, {
        x: 100,
        y: 315,
-       size: 50,
+       size: 40,
        font: Montserrat ,
        color: rgb(0.0, 0.0, 0.0),
      });
    
     // Serialize the PDFDocument to bytes (a Uint8Array)
     const pdfDataUri = await pdfDoc.saveAsBase64({ dataUri: true });
-    saveAs(pdfDataUri,name + " CER-HCI-W-2021-0123-P")
+    saveAs(pdfDataUri,name + " CER-HCI-AMA-2021-02-P")
   };
