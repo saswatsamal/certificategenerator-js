@@ -15,10 +15,10 @@ submitBtn.addEventListener("click", () => {
         text = "Enter your name and the correct Validation key";;
       }
       else if(val.trim() == ""){
-        text = "Enter your name";;
+        text = "Enter your name";
       }
       else if(val2.trim() == "" && val2!=="wdsf2022"){
-        text = "Enter the correct Validation key";;
+        text = "Enter the correct Validation key";
       }
       document.getElementById("alert").innerHTML = text;
       
