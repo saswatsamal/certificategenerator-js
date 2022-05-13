@@ -21,6 +21,7 @@ submitBtn.addEventListener("click", () => {
         text = "Enter the correct Validation key";;
       }
       document.getElementById("alert").innerHTML = text;
+      
 });
 
 const generatePDF = async (name) => {
